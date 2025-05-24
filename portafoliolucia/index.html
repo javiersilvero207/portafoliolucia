@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUCIA GARRIDO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f5f5dc; /* Beige background */
+    color: #5a3e36; /* Brown text */
+}
+h1 {
+    text-align: center;
+    color: #8b4513; /* SaddleBrown for the heading */
+}
+p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #5a3e36; /* Brown text */
+}
+a button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #8b4513; /* SaddleBrown button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+a button:hover {
+    background-color: #a0522d; /* Sienna on hover */
+}
+
+.proyecto {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff8dc; /* Cornsilk background */
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);       
+    width: 400px;
+    height: 280px;
+    gap: 1px;
+}
+.contenedor_proyecto {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten si no caben en una fila */
+    max-width: 880px; /* Limita el ancho para que solo quepan 2 proyectos por fila */
+    gap: 40px; /* Espaciado entre los proyectos */
+    justify-content: center; /* Centra los proyectos horizontalmente */
+}
+.proyecto {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    /* Quitar fondo, borde y sombra para eliminar el "cuadro" */
+    background-color: #fff6e5;
+    border: 2px solid #e0c9a6;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 6px 24px rgba(139, 69, 19, 0.15);
+    background: linear-gradient(135deg, #fff6e5 60%, #f5e1c3 100%);
+    border-radius: 18px;
+    border: 1.5px solid #d6bfa7;
+    padding: 24px 18px 12px 18px;
+    position: relative;
+    overflow: hidden;
+}
+.proyecto:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 32px rgba(139, 69, 19, 0.22);
+    border-color: #b08a60;
+}
+.proyecto img {
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(139, 69, 19, 0.10);
+    margin-bottom: 10px;
+    transition: box-shadow 0.2s;
+    max-width: 90%;
+    height: auto;
+}
+.proyecto img:hover {
+    box-shadow: 0 6px 24px rgba(139, 69, 19, 0.18);
+}
+.proyecto p {
+    font-size: 1.08rem;
+    color: #6b4a2b;
+    margin-bottom: 12px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* Mostrar 2 proyectos por fila en pantallas grandes */
+.contenedor_proyecto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 880px;
+    justify-content: center;
+}
+
+/* En pantallas pequeñas, mostrar 1 por fila */
+@media (max-width: 900px) {
+    .contenedor_proyecto {
+        grid-template-columns: 1fr;
+        max-width: 440px;
+    }
+}
+/* Galería de imágenes para proyecto 3 */
+.galeria-proyecto3 {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    overflow: visible;
+    padding: 24px 0; /* Add vertical padding to prevent cut-off */
+    position: relative;
+}
+.galeria-proyecto3 img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(139, 69, 19, 0.10);
+    transition: transform 0.18s, box-shadow 0.18s;
+    cursor: pointer;
+    background: #fff6e5;
+    position: relative;
+    z-index: 1;
+}
+.galeria-proyecto3 img:hover {
+    transform: scale(1.5) rotate(-2deg); /* Reduce scale to 1.5 for better fit */
+    box-shadow: 0 6px 18px rgba(139, 69, 19, 0.18);
+    z-index: 10;
+}
+</style>
+<body>
+    <h1>MIS TRABAJOS</h1>
+</header>
+<center>
+    <div style="text-align: center;"></div>
+    <p>Hola soy Lucía y estos son algunos de los trabajos que he hecho estudiando marketing y publicidad</p>
+    <a href="cv_lucia_garrido.pdf" target="_blank" style="text-decoration: none; font-weight: bold; margin-right: 18px;">CV</a>
+    <a href="https://www.linkedin.com/in/lucia-garrido-galeote" target="_blank" style="text-decoration: none;">
+        <i class="fa fa-linkedin-square" style="font-size:30px; vertical-align: middle;"></i>
+    </a>
+    <br>
+    <div class="contenedor_proyecto">
+
+        <div class="proyecto">
+            <h3><center>SAN VALENTIN</center></h3>
+            <p>Este es un escaparate de la marca Victoria's Secret promocionando San Valentín</p>
+            <div class="galeria-proyecto3">
+                <a href="vs1.JPG" target="_blank"><img src="vs1.JPG" alt=""></a>
+                <a href="vs2.JPG" target="_blank"><img src="vs2.JPG" alt=""></a>
+                <a href="vs3.JPG" target="_blank"><img src="vs3.JPG" alt=""></a>
+                <a href="vs4.JPG" target="_blank"><img src="vs4.JPG" alt=""></a>
+            </div>
+        </div>
+        <div class="proyecto">
+            <h3><center>NAVIDAD</center></h3>
+            <p>Este es un escaparate de navidad vendiendo este vestido y es ecologico</p>
+            <div class="galeria-proyecto3">
+                <a href="esc1.JPG" target="_blank"><img src="esc1.JPG" alt=""></a>
+                <a href="esc2.JPG" target="_blank"><img src="esc2.JPG" alt=""></a>
+            </div>
+        </div>
+       
+        <div class="proyecto">
+            <h3><center>UNEXPECTFIT</center></h3>
+            <p>Esto es un plan de marketing de una idea de negocio que tuve que inventar</p>
+            <a href="plandemarketing.pdf"><img src="portadapm.png" alt="" width="300px"></a>
+        </div>
+        
+        <div class="proyecto">
+            <h3><center>VICTORIA SECRET</center></h3>
+            <p> Esto es un plan de ventas de la marca Victoria's secret</p>
+            <a href="TrabajoPlandeVentas.pdf"><img src="portadapv.jpg" alt="" width="300px"></a>
+        </div>
+        <div class="proyecto">
+            <h3 style="margin-bottom: 6px;"><center>REVISTA</center></h3>
+            <p style="margin-top: 4px;">Esto es la idea de cómo haríamos una campaña de publicidad en una revista promocionando las crumbl cookies</p>
+            <a href="pdfcc.pdf"><img src="portadacc.jpg" alt="" width="300px"></a>
+        </div>       
+        <div class="proyecto">
+            <h3 style="margin-bottom: 6px;"><center>ESCAPARATE</center></h3>
+            <p style="margin-top: 4px;">Este es un examen de la asignatura escaparatismo,donde tuvimos que hacer desde cero un escaparate</p>
+            <a href="examen lucia garrido.pdf"><img src="portadaescaparateshein.jpg" alt="" width="300px"></a>
+        </div>
+    </div>
+</center>
+</body>
+</html>
